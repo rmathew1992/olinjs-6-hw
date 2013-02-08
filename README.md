@@ -29,13 +29,13 @@ The `visible` and `step` options are probably ones you'll want to change right a
 (Not Facebook SCOPE.) Whenever you try anything interesting with your Facebook app, they start whining about "privacy issues" and "personal information". Don't worry, we just have to ask for the right permissions. In OAuth, the types of personal information you request are called the `scope` of the request. Check these out:
 
 * **[Extended Profile Properties](https://developers.facebook.com/docs/reference/login/extended-profile-properties/)** &mdash; `user_photos`, `friends_education_history`, `friends_relationships`, `friends_relationship_details` ... Tons of useful and juicy information about your friends.
-* **[Extended Permissions](https://developers.facebook.com/docs/reference/login/extended-permissions/)** &mdash; `publish_stream` lets you publish photos, text, videos, and I tried stickers to your profile
+* **[Extended Permissions](https://developers.facebook.com/docs/reference/login/extended-permissions/)** &mdash; `publish_stream` lets you publish photos, text, videos, and "I tried" stickers to your profile
 
 Depending on what kind of `scope` permissions you use, the Facebook login dialog box will ask for different permissions. Try it out: Set your `Facebook.loginRequired()` line to:
 
 ```
 Facebook.loginRequired({
-  scope: ['users_photos', 'friends_photos', 'publish_stream']
+  scope: ['user_photos', 'friends_photos', 'publish_stream']
 })
 ```
 
