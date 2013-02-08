@@ -9,7 +9,7 @@ We want to be able to look at our friend's photos and comment on them. For the U
 
 ### Pictures of us/our friends displayed through [rcarousel](http://ryrych.github.com/rcarousel/), a cool jQuery plugin
 
-To set it up, just download it, unzip it, then copy and paste the widget directory into your project's public/javascript directory. Then just follow the instruction given in the [getting started](http://ryrych.github.com/rcarousel/#getting-started) setion. Remember, files in an app's public folder (like `public/javascripts/`) are located in the root of your URL (like `/javascripts/`). So the widget directory should be accessible from localhost:3000/javascripts/widget. 
+To set it up, just download it, unzip it, then copy and paste the widget directory into your project's public/javascript directory. Then just follow the instruction given in the [getting started](http://ryrych.github.com/rcarousel/#getting-started) setion. You may find this [html to jade converter](http://html2jade.aaron-powell.com/) useful, if you're to lazy to convert the sample html to jade yourself. Also, Remember, files in an app's public folder (like `public/javascripts/`) are located in the root of your URL (like `/javascripts/`). So the widget directory should be accessible from localhost:3000/javascripts/widget. 
 
 Once you get a basic image carousel working, try adding on cool configurations, or some of your own css styles. One thing your probably gonna want to do is navigate your carousel. To do that read the [navigation section](http://ryrych.github.com/rcarousel/#navigation). If you want to configure the carousel, you do so by passing in a javascript object to the rcarousel initializer, as seen here.
 
