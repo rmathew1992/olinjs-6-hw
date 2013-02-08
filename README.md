@@ -24,14 +24,6 @@ $( ".wrapper" ).rcarousel({
 
 The `visible` and `step` options are probably ones you'll want to change right away, to make it so one picture displays at a time. Just make sure your `step` is not greater than your `visible` or else you'll get a confusing error. By default both are 3 I believe. Read more about this stuff more on the rcarousel site.
 
-### As we see each image in the carousel, we should be able to add a comment to it.
-
-If you read through the introduction for rcarousel you will have noticed that you can include ANY arbitrary group of html elements in the carousel. You can have scrolling  tables, or divs, or a tags or whatever. So one way you could try implementing this feasture is by wrapping each image you want to display in a div along with a textarea or input type=text tag. This will allow you to scroll images with text boxes attached, for easy captioning. This is probably the easiest way to create this feature, but certainly not the only way or the best. So if you have time, try a different solution.
-
-* The comment should be pushed over to Facebook so that everyone else can see it. 
-* Push to Heroku.
-* Update the homework sheet
-
 #### Facebook Scope
 
 (Not Facebook SCOPE.) Whenever you try anything interesting with your Facebook app, they start whining about "privacy issues" and "personal information". Don't worry, we just have to ask for the right permissions. In OAuth, the types of personal information you request are called the `scope` of the request. Check these out:
@@ -49,7 +41,24 @@ Facebook.loginRequired({
 
 Now you can use the `facebook-node-sdk` to retrieve your friends' images and post comments on them.
 
-### BOOTSTRAP
+### As we see each image in the carousel, we should be able to add a comment to it.
+
+If you read through the introduction for rcarousel you will have noticed that you can include ANY arbitrary group of html elements in the carousel. You can have scrolling  tables, or divs, or a tags or whatever. So one way you could try implementing this feasture is by wrapping each image you want to display in a div along with a textarea or input type=text tag. This will allow you to scroll images with text boxes attached, for easy captioning. This is probably the easiest way to create this feature, but certainly not the only way or the best. So if you have time, try a different solution.
+
+* The comment should be pushed over to Facebook so that everyone else can see it. 
+* Push to Heroku.
+* Update the homework sheet
+
+### Twitter Bootstrap
+
+We're not gonna teach you this! But literally every site on the Internet (statistically) uses Twitter Bootstrap, so it's worth mentioning. Go to [http://bootstrapcdn.com/](Bootstrap CDN) and copy these lines and add them to your `layout.jade`:
+
+```
+link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css", rel="stylesheet")
+script(src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js")
+```
+
+Look through the [Twitter Bootstrap Documentation](http://twitter.github.com/bootstrap/) and see all the classes and IDs you can add to make your website look pretty with literally zero effort. Specifically, check out `row` and `span-*` (number) classes for make columns really easily. Also, you'll want to add a `div(class="container-fluid")` around all of your content in `layout.jade`. Play around, add some classes, have fun, be an Internet hipster.
 
 ## Refactor your entire codebase
 
