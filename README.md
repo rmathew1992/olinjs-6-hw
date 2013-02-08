@@ -29,7 +29,7 @@ For the UI we want the following features:
 * As we see each image in the carousel, we should be able to add a comment to it.
   * HINT: If you read through the introduction for rcarousel you will have noticed that you can include ANY arbitrary group of html elements in the carousel. You can have scrolling  tables, or divs, or a tags or whatever. So one way you could try implementing this feasture is by wrapping each image you want to display in a div along with a textarea or input type=text tag. This will allow you to scroll images with text boxes attached, for easy captioning. This is probably the easiest way to create this feature, but certainly not the only way or the best. So if you have time, try a different solution.
 
-* The comment should be pushed over to Facebook so that everyone else can see it.` 
+* The comment should be pushed over to Facebook so that everyone else can see it. 
 * Push to Heroku.
 * Update the homework sheet
 
