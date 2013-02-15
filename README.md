@@ -51,7 +51,7 @@ If you read through the introduction for rcarousel you will have noticed that yo
 
 ### Twitter Bootstrap
 
-We're not gonna teach you this! But literally every site on the Internet (statistically) uses Twitter Bootstrap, so it's worth mentioning. Go to [http://bootstrapcdn.com/](Bootstrap CDN) and copy these lines and add them to your `layout.jade`:
+We're not gonna teach you this! But literally every site on the Internet (statistically) uses Twitter Bootstrap, so it's worth mentioning. Go to [Bootstrap CDN](http://bootstrapcdn.com/) and copy these lines and add them to your `layout.jade`:
 
 ```
 link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css", rel="stylesheet")
