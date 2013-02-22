@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p  #{title}
+  a(href="#", id="ui-carousel-next")
+    | next 
+  a(href="#", id="ui-carousel-prev")
+    | prev
+  div(id="carousel")
+    each photo, i in data
+      div(class="carouselItem")
+        img(src="#{photo.source}", width="#{photo.width}", height="#{photo.height}")
+        form(method="post", action="/intermediate/comment", id="commentForm")
+          input(type="hidden", name="fbid", value="#{photo.id}")
+          
